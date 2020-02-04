@@ -2,19 +2,24 @@
     "nameApp" : "myapp",
     "routes"  : [
         {
-            "route"  : "alert",
-            "icon"   : "add_alert",
-            "text"   : "Alerts"
+            "route" : "alert",
+            "icon"  : "add_alert",
+            "text"  : "Alerts"
         },
         {
-            "route"  : "avatars",
-            "icon"   : "accessibility",
-            "text"   : "Avatars"
+            "route" : "avatars",
+            "icon"  : "accessibility",
+            "text"  : "Avatars"
         },
         {
-            "route"  : "cards",
-            "icon"   : "folder_open",
-            "text"   : "Cards"
+            "route" : "cards",
+            "icon"  : "folder_open",
+            "text"  : "Cards"
+        },
+        {
+            "route" : "animated_container",
+            "icon"  : "donut_large",
+            "text"  : "Animated Container"
         }
     ]
 }
