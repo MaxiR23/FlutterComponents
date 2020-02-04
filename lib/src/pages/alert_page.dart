@@ -6,7 +6,7 @@ class AlertPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Alert Page'),
+        title: const Text('Alert Page'),
         backgroundColor: Colors.indigo,
       ),
       body: Center(

@@ -4,9 +4,12 @@ import 'package:flutter_components/src/pages/home_page.dart';
 
 import 'package:flutter_components/src/pages/alert_page.dart';
 
+import 'package:flutter_components/src/pages/card_page.dart';
+
 Map<String, WidgetBuilder> getApplicationContext(){
   return <String, WidgetBuilder> {
     "/"     : (BuildContext context) => HomePage(),
     "alert" : (BuildContext context) => AlertPage(),
+    "cards" : (BuildContext context) => CardPage()
   };
 }
