@@ -1,18 +1,18 @@
 {
     "nameApp" : "myapp",
-    "Routes"  : [
+    "routes"  : [
         {
-            "routes" : "alerts",
+            "route"  : "alert",
             "icon"   : "add_alert",
             "text"   : "Alerts"
         },
         {
-            "routes" : "avatars",
+            "route"  : "avatars",
             "icon"   : "accessibility",
             "text"   : "Avatars"
         },
         {
-            "routes" : "cards",
+            "route"  : "cards",
             "icon"   : "folder_open",
             "text"   : "Cards"
         }

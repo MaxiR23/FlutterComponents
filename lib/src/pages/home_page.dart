@@ -34,9 +34,9 @@ class HomePage extends StatelessWidget {
     data.forEach((items) {
       final widgetT = ListTile(
         title: Text(items['text']),
-        leading: getIcons(items['icons']),
+        leading: getIcons(items['icon']),
         trailing: Icon(Icons.keyboard_arrow_right),
-        onTap: () {},
+        onTap: () => Navigator.pushNamed(context, items['route']),
       );
       listt..add(widgetT)..add(Divider());
     });
