@@ -14,6 +14,10 @@ class _InputPageState extends State<InputPage> {
 
   String _password = '';
 
+  String _initialItem = 'Select an option';
+
+  List<String> jobs = ['Select an option', 'Developer', 'Engineer', 'Data Science'];
+
   TextEditingController _textEditingController = new TextEditingController();
   
   @override
@@ -32,7 +36,11 @@ class _InputPageState extends State<InputPage> {
            Divider(),
            _createTfPassword(),
            Divider(),
-           _createTfDate(context)
+           _createTfDate(context),
+           Divider(),
+           _createDropDown(),
+           Divider(),
+           _createList()
          ],
        ),
     );
@@ -138,5 +146,46 @@ class _InputPageState extends State<InputPage> {
         _textEditingController.text = _date;
       });
     }
+  }
+
+  List<DropdownMenuItem<String>> _getItemSelected(){
+    List<DropdownMenuItem<String>> itemSelected = new List();
+
+    jobs.forEach((items){
+      itemSelected.add(DropdownMenuItem(
+        child: Text(items),
+        value: items,
+      ));
+    });
+    
+    return itemSelected;
+  }
+
+  Widget _createDropDown() {
+    return Row(
+      children: <Widget>[
+        Icon(Icons.select_all),
+        SizedBox(width: 20.0,),
+        Expanded(
+          child: DropdownButton(
+           value: _initialItem,
+           items: _getItemSelected(), 
+           onChanged: (value){
+             setState(() {   
+            _initialItem = value;
+            });
+          }
+        ),
+      )
+    ],
+  );
+ }
+
+  Widget _createList() {
+    return ListTile(
+      title: Text('Name: $_name'),
+      subtitle: Text('E-mail: $_email'),
+      trailing: Text(_initialItem, style: TextStyle(fontSize: 13)),
+    );
   }
 }
