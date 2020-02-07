@@ -25,6 +25,16 @@
             "route" : "inputs",
             "icon"  : "input",
             "text"  : "Inputs"
+        },
+        {
+            "route" : "sliders",
+            "icon"  : "tune",
+            "text"  : "Sliders - Checks" 
+        },
+        {
+            "route" : "lists",
+            "icon"  : "list",
+            "text"  : "List - Scroll"
         }
     ]
 }

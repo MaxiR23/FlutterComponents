@@ -12,8 +12,6 @@ class _InputPageState extends State<InputPage> {
   
   String _email = '';
 
-  String _password = '';
-
   String _initialItem = 'Select an option';
 
   List<String> jobs = ['Select an option', 'Developer', 'Engineer', 'Data Science'];
@@ -101,7 +99,7 @@ class _InputPageState extends State<InputPage> {
       ),
       onChanged: (value){
         setState(() {
-          _password = value;
+          _email = value;
         });
       },
     );
