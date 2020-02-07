@@ -114,10 +114,10 @@ class _InputPageState extends State<InputPage> {
           borderRadius: BorderRadius.circular(10.0)
         ),
         counter: Text('${_name.length}'),
-        hintText: 'Name',
-        labelText: 'Name:',
-        helperText: 'Insert name',
-        icon: Icon(Icons.person_pin),
+        hintText: 'Birthday',
+        labelText: 'Birthday:',
+        helperText: 'Date of birthday',
+        icon: Icon(Icons.calendar_today),
       ),
       onTap: (){
         FocusScope.of(context).requestFocus(new FocusNode());
